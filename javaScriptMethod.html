@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method!</title>
+</head>
+<body>
+    <script>
+        //string length..
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = text.length;
+        console.log(length);
+       //Extracting string characters..
+       let tex = 'Joy Baidya';
+       let char = tex.charAt(0);
+       console.log("CharAt means :"+char);
+
+       let char2 = tex.charCodeAt(0);
+       console.log(char2);
+
+       let char3 = tex.at(5);
+       console.log(char3);
+
+       let char4 = tex.codePointAt(2);
+       console.log(char4);
+
+       //Extracting String Parts
+       let text1 = "Hello world";
+       console.log(text1.slice(0, 5));
+       console.log(text1.slice(-5));
+
+       console.log(text1.substring(0, 5));
+       console.log(text1.substring(5, 0));
+
+       //It's deprecated
+       console.log(text1.substr(0, 5));  
+       console.log(text1.substr(-5, 5)); 
+
+       //Converting to upper and lower case ..
+       console.log(text1.toUpperCase());
+       console.log(text1.toLowerCase());
+
+
+       //JavaScript Concat..
+       let str1 = "Joy";
+       let str2 = " Baidya";
+       let result = str1.concat(str2);
+       console.log("The concat result is: "+result);
+
+       //string trim.
+       let str = "  Hello JavaScript  ";
+       console.log(str.trim());
+
+       //string padstart and padEnd 
+       let str3 = "5";
+       let result2 = str3.padStart(3, "0");
+       console.log(result2);
+
+       let str4 = "5";
+       let result3 = str4.padEnd(3, "0");
+       console.log(result3);
+
+       let str5 = "Hello ";
+       console.log(str5.repeat(4));
+
+       let str6 = "I love football";
+       console.log(str6.replace("football", "Cricket"));
+
+       let str7 = "Apple Apple Apple";
+       console.log(str7.replaceAll("Apple", "Banana"));
+
+       let str8 = "Apple, Banana, Orange";
+       console.log(str8.split());
+    </script>
+</body>
+</html>
